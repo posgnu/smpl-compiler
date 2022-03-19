@@ -1,0 +1,9 @@
+main var a,b,c,d,e, aaaa; {
+	let a <- 2;
+	let b<-a+2;
+	let c<-a+b;
+	let d<-(a+b)*4+c;
+	if a > 0 then
+		let e<-d;
+	fi; }.
+

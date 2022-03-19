@@ -1,0 +1,12 @@
+main
+var a,b,c; {
+let a <- call InputNum();
+if a<0 then
+    let c<-7;
+else
+    let b<-5;
+fi;
+call OutputNum(b);
+call OutputNum(c);
+return 0;
+}.

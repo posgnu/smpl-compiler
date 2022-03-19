@@ -1,0 +1,23 @@
+main
+var a,b,c,d;
+{
+    let a <- call InputNum();
+    let b <- 4;
+    
+    if a >= 9 then
+
+    let c <- a+b;
+    if c>0 then
+    let c <- c +1;
+    else
+    let c <- c-1;
+    fi;
+
+    
+    else
+    let c <- (a-b)*(a+b);
+    fi;
+
+    call OutputNum(c);
+
+}.

@@ -1,0 +1,14 @@
+main
+var a, b;
+{
+    let a <- call InputNum();
+    let b <- a;
+    while a < 100 do
+        let b <- a + 1;
+        let a <- a * 2;
+        while b < 20 do
+            let b <- b * 2
+        od
+    od;
+    call OutputNum(a)
+}.

@@ -1,0 +1,8 @@
+main var a,b,c,d,e,g,f, aaaa; array [2][3] x,y; array [5][6][7] z,kill; function test() ;var a;{let a<-a+2;};{
+	let c<- call InputNum();
+	let a<- call InputNum();
+	let a<-a+2;
+	call test;
+	let a<-a+3;
+}.
+

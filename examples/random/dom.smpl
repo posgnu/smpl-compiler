@@ -1,0 +1,22 @@
+main
+function Dom(n); array [12] arr; {
+	let arr[5] <- 4;
+
+	while n > 15 do
+		let arr[5] <- 7;
+		return arr[5];
+	od;
+
+	if n == 10 then
+		let arr[5] <- 6;
+	else
+		return arr[5];
+	fi;
+
+	call OutputNum(n + 1);
+
+	return arr[5];
+};
+{
+	call OutputNum(call Dom(10));
+}.

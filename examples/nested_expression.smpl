@@ -1,0 +1,7 @@
+main
+var result3;
+{
+    let result3 <- (((1 + 4) + (4 + 3)) + 5) / 1;
+    
+    return 0;
+}.

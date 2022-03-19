@@ -1,0 +1,16 @@
+main
+var a,b,c, d;
+{
+let a <- 234;
+let b <- call InputNum ();
+
+while a<5 
+do
+let a <- a+1;
+call OutputNum (a);
+
+od;
+call OutputNum(b);
+call OutputNum(a);
+}
+.

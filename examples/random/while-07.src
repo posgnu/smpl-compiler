@@ -1,0 +1,19 @@
+main
+var a,b,c,d; {
+let a <- call InputNum();
+let b <- call InputNum();
+let c <- a;
+
+if a < b then
+    let c <- a;
+    while c < b do
+        call OutputNum(c);
+        let c <- c + 1;
+    od
+else
+    call OutputNum(b);
+fi;
+
+call OutputNum(c);
+
+}.

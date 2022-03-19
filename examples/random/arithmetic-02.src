@@ -1,0 +1,11 @@
+main
+var a,b,c,d;
+{
+    let a <- call InputNum();
+    let b <- 4;
+    let d <- b;
+    let c <- a*d + a - b/(a*4) + 4*(a*d);
+    call OutputNum(c+(a*b));
+    call OutputNewLine();
+
+}.

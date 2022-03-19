@@ -1,0 +1,8 @@
+main
+var result1, result2, result3, result4;
+{
+    let result1 <- result1;
+    let result2 <- result4;
+    
+    return 0;
+}.

@@ -1,0 +1,140 @@
+digraph {
+	node [shape=record]
+	"BB0 (function main)" [label="<b>BB0 (function main)| {}"]
+	BB1 [label="<b>BB1| {}"]
+	BB2 [label="<b>BB2| {0: mov #0 --\> reg0}"]
+	"BB3 (join-while)" [label="<b>BB3 (join-while)| {1: cmp reg0, #10 --\> reg1|2: bge reg1, (11)}"]
+	BB4 [label="<b>BB4| {}"]
+	BB5 [label="<b>BB5| {3: InputNum() --\> reg1|4: add FP, #0 --\> reg2|5: mul reg0, #1 --\> reg3|6: adda reg2, reg3 --\> reg2|7: store reg2, reg1 --\> reg1}"]
+	BB6 [label="<b>BB6| {8: add reg0, #1 --\> reg1|9: bra , (0)|10: mov reg1 --\> reg0}"]
+	BB7 [label="<b>BB7| {11: nop , }"]
+	BB8 [label="<b>BB8| {}"]
+	BB9 [label="<b>BB9| {12: mov #0 --\> reg0|13: mov #0 --\> reg1}"]
+	"BB10 (join-while)" [label="<b>BB10 (join-while)| {14: sub #10, #1 --\> reg2|15: cmp reg0, reg2 --\> reg2|16: bge reg2, (44)}"]
+	BB11 [label="<b>BB11| {}"]
+	"BB12 (join-while)" [label="<b>BB12 (join-while)| {17: sub #10, reg0 --\> reg2|18: sub reg2, #1 --\> reg2|19: cmp reg1, reg2 --\> reg2|20: bge reg2, (40)}"]
+	BB13 [label="<b>BB13| {}"]
+	BB14 [label="<b>BB14| {21: add FP, #0 --\> reg2|22: mul reg1, #1 --\> reg3|23: adda reg2, reg3 --\> reg3|24: load , reg3 --\> reg4|25: add reg1, #1 --\> reg5|26: mul reg5, #1 --\> reg6|27: adda reg2, reg6 --\> reg2|28: load , reg2 --\> reg6|29: cmp reg4, reg6 --\> reg7|30: bgt reg7, (32)}"]
+	BB15 [label="<b>BB15| {31: bra , (37)}"]
+	BB16 [label="<b>BB16| {32: nop , }"]
+	BB17 [label="<b>BB17| {33: min((24),(28),) --\> reg7|34: store reg3, reg7 --\> reg3}"]
+	BB18 [label="<b>BB18| {35: max((24),(28),) --\> reg3|36: store reg2, reg3 --\> reg2}"]
+	"BB19 (join-if)" [label="<b>BB19 (join-if)| {37: nop , }"]
+	BB20 [label="<b>BB20| {38: bra , (16)|39: mov reg5 --\> reg1}"]
+	BB21 [label="<b>BB21| {40: nop , }"]
+	BB22 [label="<b>BB22| {41: add reg0, #1 --\> reg2|42: bra , (11)|43: mov reg2 --\> reg0}"]
+	BB23 [label="<b>BB23| {44: nop , }"]
+	BB24 [label="<b>BB24| {}"]
+	BB25 [label="<b>BB25| {45: mov #0 --\> reg0|46: mov #1 --\> reg1}"]
+	"BB26 (join-while)" [label="<b>BB26 (join-while)| {47: cmp reg0, #10 --\> reg2|48: bge reg2, (66)}"]
+	BB27 [label="<b>BB27| {}"]
+	BB28 [label="<b>BB28| {49: add FP, #0 --\> reg2|50: mul reg0, #1 --\> reg3|51: adda reg2, reg3 --\> reg3|52: load , reg3 --\> reg3|53: add reg0, #1 --\> reg4|54: mul reg4, #1 --\> reg5|55: adda reg2, reg5 --\> reg2|56: load , reg2 --\> reg2|57: cmp reg3, reg2 --\> reg2|58: bgt reg2, (61)}"]
+	BB29 [label="<b>BB29| {59: bra , (59)|60: mov reg1 --\> reg2}"]
+	BB30 [label="<b>BB30| {61: nop , }"]
+	BB31 [label="<b>BB31| {62: mov #0 --\> reg2}"]
+	"BB32 (join-if)" [label="<b>BB32 (join-if)| {}"]
+	BB33 [label="<b>BB33| {63: bra , (43)|64: mov reg4 --\> reg0|65: mov reg2 --\> reg1}"]
+	BB34 [label="<b>BB34| {66: nop , }"]
+	BB35 [label="<b>BB35| {67: OutputNum((44),) --\> reg0}"]
+	BB36 [label="<b>BB36| {68: return #0,  --\> reg0}"]
+	"BB37 (function max)" [label="<b>BB37 (function max)| {}"]
+	BB38 [label="<b>BB38| {}"]
+	BB39 [label="<b>BB39| {69: sub FP, #8 --\> reg0|70: load , reg0 --\> reg2|71: sub FP, #12 --\> reg0|72: load , reg0 --\> reg0|73: cmp reg2, reg0 --\> reg1|74: bgt reg1, (77)}"]
+	BB40 [label="<b>BB40| {}"]
+	BB41 [label="<b>BB41| {75: bra , (8)|76: mov reg0 --\> reg2}"]
+	BB42 [label="<b>BB42| {77: nop , }"]
+	BB43 [label="<b>BB43| {}"]
+	"BB44 (join-if)" [label="<b>BB44 (join-if)| {}"]
+	BB45 [label="<b>BB45| {78: return reg2,  --\> reg0}"]
+	"BB46 (function min)" [label="<b>BB46 (function min)| {}"]
+	BB47 [label="<b>BB47| {}"]
+	BB48 [label="<b>BB48| {79: sub FP, #8 --\> reg0|80: load , reg0 --\> reg0|81: sub FP, #12 --\> reg1|82: load , reg1 --\> reg2|83: cmp reg0, reg2 --\> reg1|84: bgt reg1, (87)}"]
+	BB49 [label="<b>BB49| {}"]
+	BB50 [label="<b>BB50| {85: bra , (8)|86: mov reg0 --\> reg2}"]
+	BB51 [label="<b>BB51| {87: nop , }"]
+	BB52 [label="<b>BB52| {}"]
+	"BB53 (join-if)" [label="<b>BB53 (join-if)| {}"]
+	BB54 [label="<b>BB54| {88: return reg2,  --\> reg0}"]
+	"BB0 (function main)" -> BB1
+	BB1 -> BB2
+	BB2 -> "BB3 (join-while)"
+	"BB3 (join-while)" -> BB4 [label=False]
+	"BB3 (join-while)" -> BB7 [label=True]
+	"BB3 (join-while)" -> BB4 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB3 (join-while)" -> BB7 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB4 -> BB5
+	BB5 -> BB6
+	BB6 -> "BB3 (join-while)"
+	BB7 -> BB8
+	BB8 -> BB9
+	BB9 -> "BB10 (join-while)"
+	"BB10 (join-while)" -> BB11 [label=False]
+	"BB10 (join-while)" -> BB23 [label=True]
+	"BB10 (join-while)" -> BB11 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB10 (join-while)" -> BB23 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB11 -> "BB12 (join-while)"
+	"BB12 (join-while)" -> BB13 [label=False]
+	"BB12 (join-while)" -> BB21 [label=True]
+	"BB12 (join-while)" -> BB13 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB12 (join-while)" -> BB21 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB13 -> BB14
+	BB14 -> BB15 [label=False]
+	BB14 -> BB16 [label=True]
+	BB14 -> BB16 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB14 -> BB15 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB14 -> "BB19 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB15 -> "BB19 (join-if)"
+	BB16 -> BB17
+	BB17 -> BB18
+	BB18 -> "BB19 (join-if)"
+	"BB19 (join-if)" -> BB20
+	BB20 -> "BB12 (join-while)"
+	BB21 -> BB22
+	BB22 -> "BB10 (join-while)"
+	BB23 -> BB24
+	BB24 -> BB25
+	BB25 -> "BB26 (join-while)"
+	"BB26 (join-while)" -> BB27 [label=False]
+	"BB26 (join-while)" -> BB34 [label=True]
+	"BB26 (join-while)" -> BB27 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB26 (join-while)" -> BB34 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB27 -> BB28
+	BB28 -> BB29 [label=False]
+	BB28 -> BB30 [label=True]
+	BB28 -> BB30 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB28 -> BB29 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB28 -> "BB32 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB29 -> "BB32 (join-if)"
+	BB30 -> BB31
+	BB31 -> "BB32 (join-if)"
+	"BB32 (join-if)" -> BB33
+	BB33 -> "BB26 (join-while)"
+	BB34 -> BB35
+	BB35 -> BB36
+	"BB37 (function max)" -> BB38
+	BB38 -> BB39
+	BB39 -> BB40 [label=False]
+	BB39 -> BB42 [label=True]
+	BB39 -> BB42 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB39 -> BB40 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB39 -> "BB44 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB40 -> BB41
+	BB41 -> "BB44 (join-if)"
+	BB42 -> BB43
+	BB43 -> "BB44 (join-if)"
+	"BB44 (join-if)" -> BB45
+	"BB46 (function min)" -> BB47
+	BB47 -> BB48
+	BB48 -> BB49 [label=False]
+	BB48 -> BB51 [label=True]
+	BB48 -> BB51 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB48 -> BB49 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB48 -> "BB53 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB49 -> BB50
+	BB50 -> "BB53 (join-if)"
+	BB51 -> BB52
+	BB52 -> "BB53 (join-if)"
+	"BB53 (join-if)" -> BB54
+	BB17 -> "BB46 (function min)" [label="Call min" color=red fontcolor=red]
+	BB18 -> "BB37 (function max)" [label="Call max" color=red fontcolor=red]
+}

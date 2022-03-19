@@ -1,0 +1,16 @@
+main
+var count; 
+var a, b;
+{
+    let count <- call InputNum();
+    let a <- call InputNum();
+
+    while count > 0 do
+        let count <- count - 1;
+        let b <- call InputNum();
+        let a <- a * b;
+    od;
+
+    call OutputNum(a);
+}.
+

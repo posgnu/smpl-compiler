@@ -1,0 +1,13 @@
+main
+var result;
+
+function zero();
+{
+    return 0;
+};
+
+{
+    let result <- call zero() + 1;
+
+    call OutputNum(result);
+}.

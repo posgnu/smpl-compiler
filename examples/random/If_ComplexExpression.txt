@@ -1,0 +1,14 @@
+main
+var a, b, c, d, e; {
+let a <- 1;
+let b <- a;
+let c <- b;
+let d <- (a + b) * (c/1)+a;
+let e <- (a + b) * (c/1)+a;
+if a < 0 then let d <- d + e; let a <- d else let d <- e fi;
+call OutputNum(a);
+call OutputNum(b);
+call OutputNum(c);
+call OutputNum(d);
+call OutputNum(e);
+}.

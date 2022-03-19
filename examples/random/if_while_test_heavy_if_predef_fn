@@ -1,0 +1,21 @@
+main var a,b,c,d,e,g,f, aaaa; {
+	let a<-call InputNum;
+	let b<-call InputNum;
+	let c<-a+b;
+	let d<-(a+b)*4+c;
+	while a > 0 do
+		if b > c+d then
+			if c > 0 then
+				let e<-20;
+			else
+				let f<-a+b;
+			fi; 
+		else
+			let g<-f+((a+b)*4);
+		fi;
+	od; 
+	let g<-e+a; 
+	call OutputNewLine();
+	call OutputNum(f);
+}.
+

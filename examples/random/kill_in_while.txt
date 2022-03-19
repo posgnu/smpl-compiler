@@ -1,0 +1,11 @@
+main
+var a, b; array[3] arr; {
+let arr[2] <- 2;
+let b <- call InputNum();
+let a <- arr[2];
+while a < 10 do
+    let a <- arr[2];
+    let arr[2] <- b;
+od;
+let a <- arr[2];
+}.

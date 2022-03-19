@@ -1,0 +1,13 @@
+main
+var a,b,c,d; {
+let a <- call InputNum();
+let b <- call InputNum();
+let c <- a;
+
+while c<=b do
+    let d <- d + 1;
+    let c <- c + 1;
+    call OutputNum(d);
+od;
+
+}.

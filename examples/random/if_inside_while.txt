@@ -1,0 +1,18 @@
+main
+  var a, b, c; {
+  let a <- 1;
+  let b <- a + 1;
+  let c <- a + 1;
+  while a < 10 do
+      let b <- a + 1;
+      if c < 0
+          then
+              let a <- a + 1;
+          else
+              let a <- a * 1;
+      fi;
+  od;
+  call OutputNum(a);
+  call OutputNum(b);
+  call OutputNum(c);
+  }.

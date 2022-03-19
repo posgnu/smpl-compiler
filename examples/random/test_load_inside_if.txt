@@ -1,0 +1,19 @@
+main
+var a, b, c, d, e;
+array [100] x,y;
+array[5] z;{
+let a <- call InputNum();
+while b < 9 do
+    let d <- x[10];
+    if a<0 then
+        let d<-d+e;
+        let e <- x[10];
+        let x[10] <- c;
+    else
+        let d<-e
+    fi;
+    let e <- x[10];
+    call OutputNum(e);
+od;
+return 0;
+}.

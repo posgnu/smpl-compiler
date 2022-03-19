@@ -1,0 +1,140 @@
+digraph {
+	node [shape=record]
+	"BB0 (function main)" [label="<b>BB0 (function main)| {}"]
+	BB1 [label="<b>BB1| {}"]
+	BB2 [label="<b>BB2| {}"]
+	"BB3 (join-while)" [label="<b>BB3 (join-while)| {0: phi #0, (8)|1: cmp (0), #10|2: bge (1), (10)}"]
+	BB4 [label="<b>BB4| {}"]
+	BB5 [label="<b>BB5| {3: InputNum()|4: add FP, #0|5: mul (0), #1|6: adda (4), (5)|7: store (6), (3)}"]
+	BB6 [label="<b>BB6| {8: add (0), #1|9: bra , (0)}"]
+	BB7 [label="<b>BB7| {10: nop , }"]
+	BB8 [label="<b>BB8| {}"]
+	BB9 [label="<b>BB9| {}"]
+	"BB10 (join-while)" [label="<b>BB10 (join-while)| {11: phi #0, (40)|12: phi #0, (16)|13: sub #10, #1|14: cmp (11), (13)|15: bge (14), (42)}"]
+	BB11 [label="<b>BB11| {}"]
+	"BB12 (join-while)" [label="<b>BB12 (join-while)| {16: phi (12), (25)|17: sub #10, (11)|18: sub (17), #1|19: cmp (16), (18)|20: bge (19), (39)}"]
+	BB13 [label="<b>BB13| {}"]
+	BB14 [label="<b>BB14| {21: add FP, #0|22: mul (16), #1|23: adda (21), (22)|24: load , (23)|25: add (16), #1|26: mul (25), #1|27: adda (21), (26)|28: load , (27)|29: cmp (24), (28)|30: bgt (29), (32)}"]
+	BB15 [label="<b>BB15| {31: bra , (37)}"]
+	BB16 [label="<b>BB16| {32: nop , }"]
+	BB17 [label="<b>BB17| {33: min((24),(28),)|34: store (23), (33)}"]
+	BB18 [label="<b>BB18| {35: max((24),(28),)|36: store (27), (35)}"]
+	"BB19 (join-if)" [label="<b>BB19 (join-if)| {37: nop , }"]
+	BB20 [label="<b>BB20| {38: bra , (16)}"]
+	BB21 [label="<b>BB21| {39: nop , }"]
+	BB22 [label="<b>BB22| {40: add (11), #1|41: bra , (11)}"]
+	BB23 [label="<b>BB23| {42: nop , }"]
+	BB24 [label="<b>BB24| {}"]
+	BB25 [label="<b>BB25| {}"]
+	"BB26 (join-while)" [label="<b>BB26 (join-while)| {43: phi #0, (51)|44: phi #1, (59)|45: cmp (43), #10|46: bge (45), (61)}"]
+	BB27 [label="<b>BB27| {}"]
+	BB28 [label="<b>BB28| {47: add FP, #0|48: mul (43), #1|49: adda (47), (48)|50: load , (49)|51: add (43), #1|52: mul (51), #1|53: adda (47), (52)|54: load , (53)|55: cmp (50), (54)|56: bgt (55), (58)}"]
+	BB29 [label="<b>BB29| {57: bra , (59)}"]
+	BB30 [label="<b>BB30| {58: nop , }"]
+	BB31 [label="<b>BB31| {}"]
+	"BB32 (join-if)" [label="<b>BB32 (join-if)| {59: phi #0, (44)}"]
+	BB33 [label="<b>BB33| {60: bra , (43)}"]
+	BB34 [label="<b>BB34| {61: nop , }"]
+	BB35 [label="<b>BB35| {62: OutputNum((44),)}"]
+	BB36 [label="<b>BB36| {63: return #0, }"]
+	"BB37 (function max)" [label="<b>BB37 (function max)| {}"]
+	BB38 [label="<b>BB38| {}"]
+	BB39 [label="<b>BB39| {64: sub FP, #8|65: load , (64)|66: sub FP, #12|67: load , (66)|68: cmp (65), (67)|69: bgt (68), (71)}"]
+	BB40 [label="<b>BB40| {}"]
+	BB41 [label="<b>BB41| {70: bra , (72)}"]
+	BB42 [label="<b>BB42| {71: nop , }"]
+	BB43 [label="<b>BB43| {}"]
+	"BB44 (join-if)" [label="<b>BB44 (join-if)| {72: phi (65), (67)}"]
+	BB45 [label="<b>BB45| {73: return (72), }"]
+	"BB46 (function min)" [label="<b>BB46 (function min)| {}"]
+	BB47 [label="<b>BB47| {}"]
+	BB48 [label="<b>BB48| {74: sub FP, #8|75: load , (74)|76: sub FP, #12|77: load , (76)|78: cmp (75), (77)|79: bgt (78), (81)}"]
+	BB49 [label="<b>BB49| {}"]
+	BB50 [label="<b>BB50| {80: bra , (82)}"]
+	BB51 [label="<b>BB51| {81: nop , }"]
+	BB52 [label="<b>BB52| {}"]
+	"BB53 (join-if)" [label="<b>BB53 (join-if)| {82: phi (77), (75)}"]
+	BB54 [label="<b>BB54| {83: return (82), }"]
+	"BB0 (function main)" -> BB1
+	BB1 -> BB2
+	BB2 -> "BB3 (join-while)"
+	"BB3 (join-while)" -> BB4 [label=False]
+	"BB3 (join-while)" -> BB7 [label=True]
+	"BB3 (join-while)" -> BB4 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB3 (join-while)" -> BB7 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB4 -> BB5
+	BB5 -> BB6
+	BB6 -> "BB3 (join-while)"
+	BB7 -> BB8
+	BB8 -> BB9
+	BB9 -> "BB10 (join-while)"
+	"BB10 (join-while)" -> BB11 [label=False]
+	"BB10 (join-while)" -> BB23 [label=True]
+	"BB10 (join-while)" -> BB11 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB10 (join-while)" -> BB23 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB11 -> "BB12 (join-while)"
+	"BB12 (join-while)" -> BB13 [label=False]
+	"BB12 (join-while)" -> BB21 [label=True]
+	"BB12 (join-while)" -> BB13 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB12 (join-while)" -> BB21 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB13 -> BB14
+	BB14 -> BB15 [label=False]
+	BB14 -> BB16 [label=True]
+	BB14 -> BB16 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB14 -> BB15 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB14 -> "BB19 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB15 -> "BB19 (join-if)"
+	BB16 -> BB17
+	BB17 -> BB18
+	BB18 -> "BB19 (join-if)"
+	"BB19 (join-if)" -> BB20
+	BB20 -> "BB12 (join-while)"
+	BB21 -> BB22
+	BB22 -> "BB10 (join-while)"
+	BB23 -> BB24
+	BB24 -> BB25
+	BB25 -> "BB26 (join-while)"
+	"BB26 (join-while)" -> BB27 [label=False]
+	"BB26 (join-while)" -> BB34 [label=True]
+	"BB26 (join-while)" -> BB27 [label=Dominate color=blue fontcolor=blue style=dotted]
+	"BB26 (join-while)" -> BB34 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB27 -> BB28
+	BB28 -> BB29 [label=False]
+	BB28 -> BB30 [label=True]
+	BB28 -> BB30 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB28 -> BB29 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB28 -> "BB32 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB29 -> "BB32 (join-if)"
+	BB30 -> BB31
+	BB31 -> "BB32 (join-if)"
+	"BB32 (join-if)" -> BB33
+	BB33 -> "BB26 (join-while)"
+	BB34 -> BB35
+	BB35 -> BB36
+	"BB37 (function max)" -> BB38
+	BB38 -> BB39
+	BB39 -> BB40 [label=False]
+	BB39 -> BB42 [label=True]
+	BB39 -> BB42 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB39 -> BB40 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB39 -> "BB44 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB40 -> BB41
+	BB41 -> "BB44 (join-if)"
+	BB42 -> BB43
+	BB43 -> "BB44 (join-if)"
+	"BB44 (join-if)" -> BB45
+	"BB46 (function min)" -> BB47
+	BB47 -> BB48
+	BB48 -> BB49 [label=False]
+	BB48 -> BB51 [label=True]
+	BB48 -> BB51 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB48 -> BB49 [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB48 -> "BB53 (join-if)" [label=Dominate color=blue fontcolor=blue style=dotted]
+	BB49 -> BB50
+	BB50 -> "BB53 (join-if)"
+	BB51 -> BB52
+	BB52 -> "BB53 (join-if)"
+	"BB53 (join-if)" -> BB54
+	BB17 -> "BB46 (function min)" [label="Call min" color=red fontcolor=red]
+	BB18 -> "BB37 (function max)" [label="Call max" color=red fontcolor=red]
+}

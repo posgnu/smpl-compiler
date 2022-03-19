@@ -1,0 +1,15 @@
+main
+var a,b,c,d;
+{
+    let a <- call InputNum();
+    let b <- 4;
+    
+    if a < 9 then
+    let c <- b;
+    else
+    let c <- b;
+    fi;
+
+    call OutputNum(c);
+
+}.

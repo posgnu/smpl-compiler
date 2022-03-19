@@ -1,0 +1,12 @@
+main var a,b,c,d,e,g,f, aaaa; array [2][3] x,y; array [5][6][7] z,kill;{
+	let c<- call InputNum(); 
+	let a<-x[1][1];
+	let b <- a+c;
+	if a>x[1][1] then
+	 	let b <- c;
+	else
+		let y[1][2] <- b;
+	fi;
+	let d<- x[1][1];
+}.
+

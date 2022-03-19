@@ -1,0 +1,18 @@
+main 
+var a,b,c,d,e,g,f, aaaa; 
+array [2][3] x,y; 
+array [5][6][7] z,kill;
+{
+	let c <- call InputNum(); 
+	let a <- x[1][1];
+	let b <- a+c;
+	if a > x[1][1] then
+		while x[1][1] > 8 do
+	 		let b <- x[2][1];
+		od;
+	else
+		let y[1][1] <- b;
+	fi;
+	let d<- x[2][1];
+}.
+

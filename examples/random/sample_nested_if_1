@@ -1,0 +1,18 @@
+main var a,b,c,d,e,g,f, aaaa; {
+	let a <- 2;
+	let b<-a+2;
+	let c<-a+b;
+	let d<-(a+b)*4+c;
+	if a > 0 then
+		if b > 0 then
+			if c > 0 then
+				let e<-20;
+			else
+				let e<-d;
+			fi;
+		fi;		
+	else 
+		let e<-c+d;
+	fi; 
+	let g<-e+a;}.
+

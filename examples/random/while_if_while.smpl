@@ -1,0 +1,21 @@
+main var uselessmachine, n, i, j; {
+  let n <- call InputNum();
+
+  while i < 10 do
+    if i < 5 then
+      while j < 10 do
+        let n <- n * 2;
+        let j <- j + 1;
+      od;
+      let j <- 0;
+    else
+      while j < 10 do
+        let n <- n / 2;
+        let j <- j + 1;
+      od;
+    fi;
+    let i <- i + 1;
+  od;
+
+  call OutputNum(n);
+}.

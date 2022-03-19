@@ -1,0 +1,20 @@
+main
+var a, b;
+{
+    let a <- call InputNum();
+    let b <- call InputNum();
+
+	if a < 0
+        then
+            let a <- a + 1;
+            while a < 10 do
+                let b <- a + 1;
+                let a <- a * 1;
+            od;
+        else
+            let a <- a + 2;
+	fi;
+
+	call OutputNum(a);
+	call OutputNum(b);
+}.

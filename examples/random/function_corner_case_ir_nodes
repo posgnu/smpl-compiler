@@ -1,0 +1,14 @@
+main var a,b,c,d,e,g,f, aaaai; array [2][3] x; array [5][6][7] z,kill; 
+function test(a, e) ;{let a<-a+2;  call test1(a,e); 
+if a>5 then
+	return a;
+fi; return a+4;};
+ function test1(y,u) ; {let y<-y/2; let u<-y-1;};{
+	let c<- call InputNum();
+	let a<- call InputNum();
+	let a<-a+2;
+	let d<- call test(x[1][1], c);
+	let a<-d+3;
+	return;
+}.
+

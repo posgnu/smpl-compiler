@@ -1,0 +1,19 @@
+main
+
+function add(a, b);
+{
+    return a + b;
+};
+
+void function test();
+array[10] a;
+{
+    let a[0] <- call InputNum();
+    let a[1] <- call InputNum();
+    call OutputNum(call add(a[0], a[1]));
+    return;
+};
+
+{
+    call test;
+}.

@@ -1,0 +1,14 @@
+main
+
+function test(element);
+{
+    let element <- 0;
+
+    return 0;
+};
+
+{
+    call test(1);
+
+    return 0;
+}.

@@ -1,0 +1,10 @@
+main
+array[4] arrA, arrB;
+var question, i, x, y;
+{
+    let i <- 0;
+    let x <- arrA[0];
+    let arrB[1] <- 42;
+    let y <- arrA[i];
+    call OutputNum(x+y);
+}.

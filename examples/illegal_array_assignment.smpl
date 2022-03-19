@@ -1,0 +1,8 @@
+main
+array[10] arr;
+
+{
+    let arr = 0;
+
+    return 0;
+}.

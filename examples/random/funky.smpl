@@ -1,0 +1,33 @@
+main
+var a;
+array [5] arr;
+function Fib(n); var i; array [1000] arr; {
+	let i <- 0 - 1;
+	if n >= 1000 then return i; fi;
+	if n < 0 then return i; fi;
+	let arr[0] <- 0;
+	let arr[1] <- 1;
+
+	let i <- 2;
+	while i <= n do
+		let arr[i] <- arr[i - 1] + arr[i - 2];
+		let i <- i + 1;
+	od;
+
+	return arr[n];
+};
+{
+	let a <- 0;
+
+	while a < 5 do
+		let arr[a] <- call Fib(a * 5);
+		let a <- a + 1;
+	od;
+
+	let a <- 0;
+
+	while a < 5 do
+		call OutputNum(arr[a]);
+		let a <- a + 1;
+	od;
+}.

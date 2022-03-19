@@ -1,0 +1,24 @@
+main
+var a, b, c;
+function smallTest(x, y);
+var z, v;
+{
+  let z <- call InputNum();
+  call OutputNum(z);
+  if x > y
+  	then
+  		let z <- z + x;
+  		return z;
+  	else
+  	    let z <- call smallTest(z, y);
+  fi;
+  call OutputNum(z);
+  return z;
+};
+{
+	let a <- call InputNum;
+    let b <- a + call smallTest(a, a+1);
+
+	call OutputNum(a);
+	call OutputNum(b);
+}.

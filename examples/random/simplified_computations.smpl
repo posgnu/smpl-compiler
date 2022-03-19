@@ -1,0 +1,11 @@
+main
+var a, b, c;
+{
+	let a <- call InputNum;
+	let a <- a + 5 * (6 + b * 2) / 2;
+	let b <- a * 2 + b;
+	let a <- b;
+	let c <- a + b * (1 - 2) + (a - a);
+	call OutputNum(b);
+	call OutputNum(c);
+}.

@@ -1,0 +1,17 @@
+main
+var a, b, c, d; {
+    let a <- 1;
+    let b <- call InputNum();
+    let c <- a + b;
+    let d <- 1;
+    while a + b < 10 do
+        let c <- a + b;
+        let d <- d + 1;
+        call OutputNum(c + 1);
+        call OutputNum(d);
+    od;
+    call OutputNum(a);
+    call OutputNum(b);
+    call OutputNum(c);
+    call OutputNum(d);
+}.
