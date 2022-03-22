@@ -13,7 +13,7 @@ The compiler supports following features:
 6. Graph representation of IR
 
 ## Architecture
-~~Strikethrough~~ components are not implemented.
+
 ![](architecture.png)
 
 ## Run
