@@ -102,11 +102,8 @@ __IR__
 __Register Allocated IR__
 ![](bubble_sort-register_allocated/ir_with_register.jpg)
 ## Trivia
-I implemented it all by myself from the scratch with great help from professor [Michael Franz](https://www.michaelfranz.com/)'s Compiler lectures.
+While implementing it, I got a great help from professor [Michael Franz](https://www.michaelfranz.com/)'s Compiler lectures.
 
-Total time spent:
-> Writing design document - 5 days \
-> Coding - 3 days
 
 
 
